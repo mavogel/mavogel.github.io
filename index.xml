@@ -6,9 +6,21 @@
     <description>Recent content on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Sat, 01 Dec 2018 13:29:12 +0100</lastBuildDate>
     
 	<atom:link href="https://mavogel.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About me</title>
+      <link>https://mavogel.github.io/about/</link>
+      <pubDate>Sat, 01 Dec 2018 13:29:12 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/about/</guid>
+      <description>Hello, my name is Manuel Vogel, and I&amp;rsquo;m striving to grow every day as a person and developer.
+Currently I&amp;rsquo;m working at Stocard as a DevOps Engineer, doing awesome stuff with terraform, Docker, TypeScript and bash. In my free time I maintain the terraform-provider-docker.
+I love automating things because I believe we&amp;rsquo;re all smart people and we should not be the robot but build the robot, for example by teaching non-engineering heroes how to achieve this well with this little black window, called terminal.</description>
+    </item>
     
   </channel>
 </rss>
