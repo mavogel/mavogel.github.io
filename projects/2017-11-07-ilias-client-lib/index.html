@@ -10,9 +10,11 @@
     <meta name="keywords" content="blog,developer,personal">
 
     <base href="https://mavogel.github.io/">
-    <title>Portfolio</title>
+    <title>
+  Ilias Client Lib · Portfolio
+</title>
 
-    <link rel="canonical" href="">
+    <link rel="canonical" href="https://mavogel.github.io/projects/2017-11-07-ilias-client-lib/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -69,12 +71,34 @@
 
       <div class="content">
         
-  <section class="container centered">
-  <div class="error">
-    <h1>404</h1>
-    <h2>Page Not Found</h2>
-    <p>Sorry, this page does not exist.<br />You can head back to <a href="https://mavogel.github.io/">homepage</a>.</p>
-  </div>
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Ilias Client Lib</h1>
+    </header>
+
+    
+
+<h1 id="the-java-ilias-client-lib-extraction">The Java ilias client lib extraction</h1>
+
+<p>Recently I got a request for extending the <a href="https://github.com/mavogel/ilias-client">ilias-client</a>
+with the ability to add a group to a course. The requestors wanted to use
+the client tool for this purpose, but a better approach was to slice the
+corresponding functions out of the existing tool and move
+it into a client library which could then be used by both
+tools.</p>
+
+<h2 id="reason">Reason</h2>
+
+<p>Due to this decision <a href="https://github.com/mavogel/ilias-client-lib">ilias-client-lib</a> was born and released. Afterward, the version was added to the client tools</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Fully tested software give you the possibility to refactor with
+ease. In total the whole split out took about an hour with
+adapting all the paths and moving the tests.</p>
+
+  </article>
 </section>
 
 

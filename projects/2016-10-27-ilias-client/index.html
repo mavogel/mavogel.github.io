@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Manuel Vogel">
+    <meta name="description" content="Manuel Vogel&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://mavogel.github.io/">
+    <title>
+  Ilias Client · Portfolio
+</title>
+
+    <link rel="canonical" href="https://mavogel.github.io/projects/2016-10-27-ilias-client/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://mavogel.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://mavogel.github.io/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="https://mavogel.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://mavogel.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.53" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://mavogel.github.io/">
+      Portfolio
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://mavogel.github.io/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://mavogel.github.io/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Ilias Client</h1>
+    </header>
+
+    
+
+<h1 id="the-java-ilias-client">The Java ilias client</h1>
+
+<p><a href="https://github.com/ILIAS-eLearning/ILIAS">ILIAS</a> is the preferred e-learning platform at
+the <a href="https://hs-karlsruhe.de">University of Applied Sciences</a> in Karlsruhe. In general</p>
+
+<blockquote>
+<p>ILIAS is a powerful Open Source Learning Management System for developing and realizing web-based e-learning. The software was developed to reduce the costs of using new media in education and further training and to ensure the maximum level of customer influence in the implementation of the software. ILIAS is published under the General Public Licence and free of charge.</p>
+</blockquote>
+
+<h2 id="the-reasons-for-a-java-client">The reasons for a java client</h2>
+
+<p>During my 2 years as a research assistant while I was completing my M.Sc. in Computer Science
+there were recurring tasks to be done mostly at the beginning of each semester or
+sometimes during the semester such as</p>
+
+<ul>
+<li>removing all users from all or only some groups in one course,</li>
+<li>removing all uploaded materials from all or only some groups in one course,</li>
+<li>setting or updating a registration period in all or only some groups in one course,</li>
+<li>setting or updating a maximum amount of members in all or only some groups in one course,</li>
+<li>setting file upload permissions</li>
+<li>or printing all groups with its members in different output formats such as <code>HTML</code> or <code>PDF</code>.</li>
+</ul>
+
+<p>All steps were performed manually and took about 8 hours to be completed, not speaking of
+the last one which was about <code>copy-pasting</code> into an Excel/Word file and then fixing the
+formatting. At the end of the day it was good training for the right index finger, but this is not what Engineers love to do, right?</p>
+
+<blockquote>
+<p>We&rsquo;re are not the robot, we build the robot</p>
+</blockquote>
+
+<p>So I decided to write a small command line application to automate those tasks as much as possible.</p>
+
+<p>After some research, it turned out, there is such a library for Java (which was my strongest language at the moment), so I decided to build it as well. In the beginning, only the methods I need. In a next step open-source it and then step-by-step add more features if
+the community desires them.</p>
+
+<h2 id="the-goals">The goals</h2>
+
+<p>So I thought, why not learn a lot of new things on the way as well. At the moment I was still on the
+level of Java 7, and I heard about those new cool <code>streams</code> in Java 8 and which opportunity is
+better than a small project to gain experience in this new feature.</p>
+
+<p>From the former company I was already infected by <code>Test Driven Development</code> (<a href="http://agiledata.org/essays/tdd.html">TDD</a>) which</p>
+
+<blockquote>
+<p>[&hellip;] is a software development process that relies on the repetition of a very short development cycle: first the developer writes an (initially failing) automated test case that defines a desired improvement or new function, then produces the minimum amount of code to pass that test, and finally refactors the new code to acceptable standards.</p>
+</blockquote>
+
+<p>So I could try out the way I was <em>used</em> to code and then refactor the code and try out the
+new language features. However, I felt like there was more to explore like</p>
+
+<ul>
+<li>adding code coverage at <a href="https://codecov.io">codecov</a></li>
+<li>and adding release process with <code>travis</code> to <a href="https://oss.sonatype.org/content/groups/staging/com/github/mavogel/ilias-client">maven central</a> based on <code>dracoblue's</code> <a href="https://dracoblue.net/dev/uploading-snapshots-and-releases-to-maven-central-with-travis/">post</a>.</li>
+</ul>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>After designing the architecture, I ended up with an easily extensible state-machine. After the
+login, all courses are displayed where the user is an admin. After selecting one course, an action on the course can be selected. Currently only the groups of a course until a folder depth of
+5 can be collected. On each course, multiple actions like, e.g. removing all users and/or
+removing all uploaded materials can be performed.</p>
+
+<p>I choose the TDD approach explained in the book <a href="http://www.growing-object-oriented-software.com/">Growing Object-Oriented Software</a> which was tough, especially in the beginning
+when I was not used to write the test first. TBH I did not do it through the whole developing
+process, but I&rsquo;m grateful that it showed me how the test could drive the architecture. Moreover, I&rsquo;m happy
+to have also mocked final classes like <code>Console</code> with <code>PowerMock</code> to be able to simulate user inputs.</p>
+
+<p>For the output, I choose Velocity templates to separate the logic from the presentation and the ability to add more templates in the future without having to re-compile the tool. Nevertheless, two templates are provided in the <code>jar</code>.</p>
+
+<p>The full code can be found <a href="https://github.com/mavogel/ilias-client">here</a> on my <code>github</code> profile.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I&rsquo;m happy and proud for this little tool which helped me and will help others
+in the future to get tedious tasks done faster and have more time to do creative things. Furthermore, it encouraged me to explore new fields in tech with ease because I had a project with a purpose.</p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>My private blog: technical and personal</p>
+    
+     © 2018
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

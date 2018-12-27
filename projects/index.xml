@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Portfolio</title>
-    <link>https://mavogel.github.io/</link>
-    <description>Recent content on Portfolio</description>
+    <title>Projects on Portfolio</title>
+    <link>https://mavogel.github.io/projects/</link>
+    <description>Recent content in Projects on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Dec 2018 13:29:12 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 07 Nov 2017 16:28:54 +0100</lastBuildDate>
     
-	<atom:link href="https://mavogel.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mavogel.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About me</title>
-      <link>https://mavogel.github.io/about/</link>
-      <pubDate>Sat, 01 Dec 2018 13:29:12 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/about/</guid>
-      <description>Hello, my name is Manuel Vogel. I&amp;rsquo;m striving to grow every day as a person and developer and I like doing good things and talk/write about them. (Kudos for the inspiration go to my buddy r3dsm0k3)
-Currently I&amp;rsquo;m working at Stocard as a DevOps Engineer, doing awesome stuff with terraform, Docker, TypeScript and bash. In my free time I maintain the terraform-provider-docker.
-I love automating things because I believe we&amp;rsquo;re all smart people and we should not be the robot but build the robot, for example by teaching non-engineering heroes how to achieve this well with this little black window, called terminal.</description>
-    </item>
     
     <item>
       <title>Ilias Client Lib</title>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Manuel Vogel">
+    <meta name="description" content="Manuel Vogel&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://mavogel.github.io/">
+    <title>
+  From a Monolith to a microservices architecture · Portfolio
+</title>
+
+    <link rel="canonical" href="https://mavogel.github.io/projects/2017-02-01-from-monolith-to-microservices/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://mavogel.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://mavogel.github.io/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="https://mavogel.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://mavogel.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.53" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://mavogel.github.io/">
+      Portfolio
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://mavogel.github.io/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://mavogel.github.io/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>From a Monolith to a microservices architecture</h1>
+    </header>
+
+    
+
+<p>This project was part of the masters course <code>Distributed Information Systems</code> at the University of
+Applied Sciences (Karlsruhe) with the task to split a monolithic web shop application running on
+Tomcat into microservices with the Spring Cloud Netflix stack and exchanging the authentication and authorization to OAuth2.</p>
+
+<p>The final implementation can be found <a href="https://github.com/mavogel/vis-lab">here</a>.</p>
+
+<h2 id="reason">Reason</h2>
+
+<p>The reason why I put this project on my portfolio is that I decided to go the little extra mile with this project. I chose the take a Master&rsquo;s course in Computer Science
+after an almost 3 years working period to specialize in specific fields and to use
+the freedom the studies allow me to go some extra miles and go beyond one&rsquo;s own nose.</p>
+
+<p>I wanted to dive deep into <code>Docker</code> and all this container environment. I wanted an answer to questions like
+- what are the benefits of those container technologies?
+- how does it work and how can it make my life easier, especially on different platforms?</p>
+
+<p>Furthermore, I am a fan of automating things, especially when it comes to not so pleasing tasks like documentation. Testing, of course, was also one of my concerns, so I found this lovely package called <code>Spring rest docs</code>, which combines both approaches:
+creating the documentation from successful running tests.</p>
+
+<p>As the last step I wanted to ensure a seamless migration from the old frontend to
+the new one. This means basically being able to run the new microservice approach along with the <em>old</em> monolith at the same time.</p>
+
+<h2 id="byproducts">Byproducts</h2>
+
+<p>During the first steps of the course, I saw a lot of students struggling setting up their environment for the legacy service, which needed a <code>MySQL</code> database and <code>Tomcat</code> web server.
+Whereas setting up the database was the easier task, the struggles started when
+the web server had to be set up:</p>
+
+<ul>
+<li>Which <code>XML</code> file has to be put where to get access to the admin console?</li>
+<li>In which folder does the <code>war</code> or <code>ear</code> have to put in?</li>
+<li>How does the database connection to be established and so on?</li>
+</ul>
+
+<p>As I already started in an early stage to set up the Docker environment, I got to know
+the benefits of having, e.g. a database within a container. Directly mount a folder
+into the container and the contents are written on your disk, but on the other
+hand, you do not have to care about the whole setup and native installation. Well, only
+the native Docker installation in the beginning. As a by-product, I wrapped to native installation into a Docker setup which abstracts the initial ramp into a
+script and lets the student focus on the main task: what&rsquo;s the best way to split this
+monolith into microservices.</p>
+
+<p>So, the <a href="https://github.com/mavogel/hska-vis-legacy">vis-legacy setup</a> was born.
+It abstracts the following tasks</p>
+
+<ul>
+<li>Creates the tables in the database and insert the admin user data</li>
+<li>Builds the <code>ear</code></li>
+<li>Sets ups preconfigured <code>Tomcat</code> application server with an admin user</li>
+<li>Copies the <code>ear</code> into the web server</li>
+<li>Wires both containers together.</li>
+</ul>
+
+<p><strong>UPDATE (2018-08-02):</strong>
+As Docker and Docker compose have evolved on the meantime the setup does not need
+a native <code>maven</code> installation anymore. Still is now all handled by the <code>stage-build</code>.
+Furthermore, all <code>ADD</code> commands have been replaced with the favored <code>COPY</code> command.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Docker and Docker Compose wrapped into a script make the set up fairly easy and straightforward:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ git clone git@github.com:mavogel/vis-lab.git
+$ cd vis-lab
+$ sh run_microservices.sh</code></pre></div>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Going beyond one&rsquo;s own nose helped me a lot in this case because in the end after all
+the wiring was done, logging and debugging was way easier and faster. Every service
+was simply wrapped into a container. Furthermore, IMHO those container technologies
+are the future and the way I would like to develop software.</p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>My private blog: technical and personal</p>
+    
+     © 2018
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
