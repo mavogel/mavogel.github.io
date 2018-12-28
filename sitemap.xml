@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-51/</loc>
+    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mavogel.github.io/about/</loc>
     <lastmod>2018-12-01T13:29:12+01:00</lastmod>
   </url>
@@ -28,8 +33,20 @@
   </url>
   
   <url>
+    <loc>https://mavogel.github.io/tags/git-repos/</loc>
+    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mavogel.github.io/</loc>
-    <lastmod>2018-12-01T13:29:12+01:00</lastmod>
+    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/posts/</loc>
+    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -41,6 +58,19 @@
   
   <url>
     <loc>https://mavogel.github.io/tags/</loc>
+    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/testing/</loc>
+    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/categories/things-that-i-learned/</loc>
+    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
