@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typescript on Portfolio</title>
+    <link>https://mavogel.github.io/tags/typescript/</link>
+    <description>Recent content in Typescript on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Dec 2018 22:44:15 +0100</lastBuildDate>
+    
+	<atom:link href="https://mavogel.github.io/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things that I learned in week 48</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-48/</link>
+      <pubDate>Sun, 02 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-48/</guid>
+      <description>AWS When you&amp;rsquo;re in doubt about a policy the policy simulator https://policysim.aws.amazon.com should always your first tool of choice.
+Typescript When unwrapping an object in Typescript the following way, you should be sure that all properties match. If they don’t, they’re just undefinded
+const { accessKey, accessKeySecret, region, bucket, endpoint } = this.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -8,8 +8,38 @@
   </url>
   
   <url>
+    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-50/</loc>
+    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-49/</loc>
+    <lastmod>2018-12-09T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-48/</loc>
+    <lastmod>2018-12-02T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mavogel.github.io/about/</loc>
     <lastmod>2018-12-01T13:29:12+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-46/</loc>
+    <lastmod>2018-11-18T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-45/</loc>
+    <lastmod>2018-11-11T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-44/</loc>
+    <lastmod>2018-11-04T22:44:15+01:00</lastmod>
   </url>
   
   <url>
@@ -28,7 +58,25 @@
   </url>
   
   <url>
+    <loc>https://mavogel.github.io/tags/aws/</loc>
+    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mavogel.github.io/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/docker/</loc>
+    <lastmod>2018-11-18T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/domain-driven-design/</loc>
+    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -39,8 +87,38 @@
   </url>
   
   <url>
+    <loc>https://mavogel.github.io/tags/inversify/</loc>
+    <lastmod>2018-11-04T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/mockserver/</loc>
+    <lastmod>2018-11-11T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/nodejs/</loc>
+    <lastmod>2018-11-18T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/npm/</loc>
+    <lastmod>2018-11-04T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mavogel.github.io/</loc>
     <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/postgres/</loc>
+    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -57,8 +135,20 @@
   </url>
   
   <url>
+    <loc>https://mavogel.github.io/tags/redshift/</loc>
+    <lastmod>2018-12-09T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/restify/</loc>
+    <lastmod>2018-11-04T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mavogel.github.io/tags/</loc>
-    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -71,6 +161,18 @@
   <url>
     <loc>https://mavogel.github.io/categories/things-that-i-learned/</loc>
     <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/travis/</loc>
+    <lastmod>2018-11-18T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/typescript/</loc>
+    <lastmod>2018-12-02T22:44:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   

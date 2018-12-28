@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Manuel Vogel">
+    <meta name="description" content="Manuel Vogel&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <base href="https://mavogel.github.io/">
+    <title>
+  Things that I learned in week 50 · Portfolio
+</title>
+
+    <link rel="canonical" href="https://mavogel.github.io/posts/things-that-i-learned-2018-cw-50/">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://mavogel.github.io/css/coder.min.cd087ace86754b082dec94545567f8361cba42e84f8e15edbc4a9f6e52bd1f6a.css" integrity="sha256-zQh6zoZ1Swgt7JRUVWf4Nhy6QuhPjhXtvEqfblK9H2o=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://mavogel.github.io/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="https://mavogel.github.io/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://mavogel.github.io/img/favicon-16x16.png" sizes="16x16">
+
+    
+
+    <meta name="generator" content="Hugo 0.53" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://mavogel.github.io/">
+      Portfolio
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://mavogel.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://mavogel.github.io/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://mavogel.github.io/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Things that I learned in week 50</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2018-12-16T22:44:15&#43;01:00'>
+                December 16, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              3 minutes read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://mavogel.github.io/categories/things-that-i-learned/">things-that-i-learned</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://mavogel.github.io/tags/postgres/">postgres</a>
+      <span class="separator">•</span>
+    <a href="https://mavogel.github.io/tags/domain-driven-design/">domain-driven-design</a>
+      <span class="separator">•</span>
+    <a href="https://mavogel.github.io/tags/aws/">aws</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+
+<h2 id="postgres">Postgres</h2>
+
+<p>While creating a projection for a specific use-case, we faced the problem
+that there was no more room for optimization with indexes on the database.
+So we had to step back and re-think the whole data model which consisted of
+4 tables each having more than 50 million rows. Until this point, we hat cheap <code>inserts</code> and expensive <code>gets</code> on the data model.</p>
+
+<p>After the analysis of the data, we figured out that the approach we took, in the beginning, was a bit too naive. Well at a certain point when your data grows
+to an amount you have barely experience how to handle it or until now
+you could easily handle all data, and then it&rsquo;s time to re-define the use case and optimize from both sides: <code>insert</code> and <code>get</code>.</p>
+
+<p>It turned out that not all the data is relevant and the data was connected in certain ways, so we already reduced the number of tables from 4 down to 2. This improvement already reduced the cost for joining significantly, but on the other hand, the inserts
+were now attached to a certain logic, because the data had to be combined. Nevertheless,
+the service and database could handle this amount of requests to cope with the load.</p>
+
+<p>On the other hand, we wanted the projection to be lightning fast. On a projection, there should usually be no <code>joins</code> if it is meant to be fast. So we took an intermediate
+step to update the projections (there were 2 in total) on each <code>insert</code> or <code>update</code>
+of the <em>intermediate</em> tables. Furthermore, we computed the eligibility of a data record for the projection. Additionally, we partitioned the projection tables. Fortunately
+Postgres 10 does much work on <a href="https://www.postgresql.org/docs/10/ddl-partitioning.html">paritioning</a>
+already for you. You still have to create the partitions on your own but a <code>CREATE TABLE IF EXISTS</code> does the magic before each insert. In <a href="https://www.postgresql.org/docs/9.6/ddl-partitioning.html">Postgres 9</a> you still had to write triggers.
+You still can in Postgres 10 as well if you want full flexibility. On AWS RDS the latest
+Postgres version available is currently 10, meaning if you cannot to the lovely <code>INSERT ... ON CONFLICT DO UPDATE</code>, but you have to implement it on your own. With our experience
+in <a href="https://aws.amazon.com/redshift/">Redshift</a>, we already knew how to achieve this. (BTW
+<a href="https://www.postgresql.org/docs/11/release-11.html">Postgres 11</a> will support those
+<code>upserts</code>.)</p>
+
+<p>Regarding <code>Domain-driven Design</code> the question rose where to put which logic: put the
+<code>CREATE TABLE IF EXISTS</code> for the partition as a stored procedure or in
+the infrastructure layer of the service? We decided on the infrastructure layer, although
+it might be slower than the stored procedure, but it is better testable and
+extendable and the code can be put under version control.</p>
+
+<p>It was a good decision to split logic between <code>inserts</code> and <code>update</code> of the projection.
+The next step will be the optimization of the UI which is another topic. But the database layer is now at a stable state.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>There will be a point in time when all your data cannot be handled any by a single
+data source. Projections are a neat solution but they should
+be optimized as much as possible or kept at a specific amount of data, meaning
+old data should be deleted or archived.</p>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>My private blog: technical and personal</p>
+    
+     © 2018
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

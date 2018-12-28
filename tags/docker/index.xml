@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker on Portfolio</title>
+    <link>https://mavogel.github.io/tags/docker/</link>
+    <description>Recent content in Docker on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 18 Nov 2018 22:44:15 +0100</lastBuildDate>
+    
+	<atom:link href="https://mavogel.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things that I learned in week 46</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-46/</link>
+      <pubDate>Sun, 18 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-46/</guid>
+      <description>Building nodejs in Docker If you need to add keys to the keychain in a Travis build and you have problems with IPV6 (which Travis cannot handle), use the IPV4 keyservers as follows:
+RUN set -ex \  &amp;amp;&amp;amp; for key in \  94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \  #…. more keys... ; do \  gpg --keyserver hkp://ha.pool.sks-keyservers.net --recv-keys &amp;#34;$key&amp;#34; || \  gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys &amp;#34;$key&amp;#34; || \  gpg --keyserver hkp://ipv4.</description>
+    </item>
+    
+  </channel>
+</rss>

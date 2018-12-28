@@ -11,10 +11,10 @@
 
     <base href="https://mavogel.github.io/">
     <title>
-  Posts · Portfolio
+  Things that I learned in week 44 · Portfolio
 </title>
 
-    <link rel="canonical" href="https://mavogel.github.io/posts/">
+    <link rel="canonical" href="https://mavogel.github.io/posts/things-that-i-learned-2018-cw-44/">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,700|Source+Code+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
@@ -37,9 +37,6 @@
     <link rel="icon" type="image/png" href="https://mavogel.github.io/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://mavogel.github.io/img/favicon-16x16.png" sizes="16x16">
 
-    
-      <link href="https://mavogel.github.io/posts/index.xml" rel="alternate" type="application/rss+xml" title="Portfolio" />
-      <link href="https://mavogel.github.io/posts/index.xml" rel="feed" type="application/rss+xml" title="Portfolio" />
     
 
     <meta name="generator" content="Hugo 0.53" />
@@ -78,46 +75,80 @@
 
       <div class="content">
         
-  <section class="container list">
-    <h1 class="title">Posts</h1>
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Things that I learned in week 44</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2018-11-04T22:44:15&#43;01:00'>
+                November 4, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              One minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://mavogel.github.io/categories/things-that-i-learned/">things-that-i-learned</a></div>
 
-    <ul><li>
-  <span>December 23, 2018</span>
-  <a href="https://mavogel.github.io/posts/things-that-i-learned-2018-cw-51/">Things that I learned and taught in week 51</a>
-</li>
-<li>
-  <span>December 16, 2018</span>
-  <a href="https://mavogel.github.io/posts/things-that-i-learned-2018-cw-50/">Things that I learned in week 50</a>
-</li>
-<li>
-  <span>December 9, 2018</span>
-  <a href="https://mavogel.github.io/posts/things-that-i-learned-2018-cw-49/">Things that I learned in week 49</a>
-</li>
-<li>
-  <span>December 2, 2018</span>
-  <a href="https://mavogel.github.io/posts/things-that-i-learned-2018-cw-48/">Things that I learned in week 48</a>
-</li>
-<li>
-  <span>November 18, 2018</span>
-  <a href="https://mavogel.github.io/posts/things-that-i-learned-2018-cw-46/">Things that I learned in week 46</a>
-</li>
-<li>
-  <span>November 11, 2018</span>
-  <a href="https://mavogel.github.io/posts/things-that-i-learned-2018-cw-45/">Things that I learned in week 45</a>
-</li>
-<li>
-  <span>November 4, 2018</span>
-  <a href="https://mavogel.github.io/posts/things-that-i-learned-2018-cw-44/">Things that I learned in week 44</a>
-</li>
-</ul>
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://mavogel.github.io/tags/npm/">npm</a>
+      <span class="separator">•</span>
+    <a href="https://mavogel.github.io/tags/restify/">restify</a>
+      <span class="separator">•</span>
+    <a href="https://mavogel.github.io/tags/inversify/">inversify</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+
+<h2 id="npm-libraries">npm libraries</h2>
+
+<p>The following libraries should be used with pinned versions
+-  <code>restify@6.3.2</code>
+- and <code>inversify-restify-utils@3.3.1</code></p>
+
+<p>Not even with a micro change <code>restify@6.3.4</code>. It is incompatible with the <code>inversify</code> utils. You get a <code>Constructor already exists</code> error.</p>
+
+<p>Semantic versioning is not always reliable! I found a <a href="https://github.com/hlibco/restify-inversify-constructor-error">repository</a> pointing out this error as well.</p>
+
+      </div>
+
+      <footer>
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </footer>
+    </article>
 
     
-
-
-
-
-
-
   </section>
 
       </div>

@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Testing on Portfolio</title>
-    <link>https://mavogel.github.io/tags/testing/</link>
-    <description>Recent content in Testing on Portfolio</description>
+    <title>Mockserver on Portfolio</title>
+    <link>https://mavogel.github.io/tags/mockserver/</link>
+    <description>Recent content in Mockserver on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Dec 2018 22:44:15 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 11 Nov 2018 22:44:15 +0100</lastBuildDate>
     
-	<atom:link href="https://mavogel.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mavogel.github.io/tags/mockserver/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Things that I learned and taught in week 51</title>
-      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-51/</link>
-      <pubDate>Sun, 23 Dec 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-51/</guid>
-      <description>Testing Yes, as I already mentioned I love tests. Tests should be treated like the production code they test, right? So They should also be refactored the same way. There should also be time for, and the business side should IMHO understand the importance of it. Sure the business value is not measurable at the moment, but it will be later. Especially when the test code has become a lot of copy-pasting around and engineers don&amp;rsquo;t feel like touching the test code anymore, because it has become kind of complex.</description>
-    </item>
     
     <item>
       <title>Things that I learned in week 45</title>

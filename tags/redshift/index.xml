@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Redshift on Portfolio</title>
+    <link>https://mavogel.github.io/tags/redshift/</link>
+    <description>Recent content in Redshift on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 Dec 2018 22:44:15 +0100</lastBuildDate>
+    
+	<atom:link href="https://mavogel.github.io/tags/redshift/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things that I learned in week 49</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-49/</link>
+      <pubDate>Sun, 09 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-49/</guid>
+      <description>AWS Redshift This week was much focus on AWS Redshift:
+Testing Unfortunately, it is currently not possible to mock a Redshift for testing. As we use white-box testing with Docker containers, I was looking for a container supporting DISTSTYLE, KEYSTYLE, as well as LOAD and UNLOAD. After researching there is no suitable container out there: neither docker-amazon-redshift, nor docker-pgredshift was appropriate. We thought
+ adapting the SQL statement so that we could work with a Postgres container or about mocking TCP connections and faking the calls to Redshift  but could not find a solution, because we also did not want to adapt production code for testing.</description>
+    </item>
+    
+  </channel>
+</rss>

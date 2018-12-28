@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on Portfolio</title>
+    <link>https://mavogel.github.io/tags/aws/</link>
+    <description>Recent content in Aws on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Dec 2018 22:44:15 +0100</lastBuildDate>
+    
+	<atom:link href="https://mavogel.github.io/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things that I learned in week 50</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-50/</link>
+      <pubDate>Sun, 16 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-50/</guid>
+      <description>Postgres While creating a projection for a specific use-case, we faced the problem that there was no more room for optimization with indexes on the database. So we had to step back and re-think the whole data model which consisted of 4 tables each having more than 50 million rows. Until this point, we hat cheap inserts and expensive gets on the data model.
+After the analysis of the data, we figured out that the approach we took, in the beginning, was a bit too naive.</description>
+    </item>
+    
+    <item>
+      <title>Things that I learned in week 49</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-49/</link>
+      <pubDate>Sun, 09 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-49/</guid>
+      <description>AWS Redshift This week was much focus on AWS Redshift:
+Testing Unfortunately, it is currently not possible to mock a Redshift for testing. As we use white-box testing with Docker containers, I was looking for a container supporting DISTSTYLE, KEYSTYLE, as well as LOAD and UNLOAD. After researching there is no suitable container out there: neither docker-amazon-redshift, nor docker-pgredshift was appropriate. We thought
+ adapting the SQL statement so that we could work with a Postgres container or about mocking TCP connections and faking the calls to Redshift  but could not find a solution, because we also did not want to adapt production code for testing.</description>
+    </item>
+    
+    <item>
+      <title>Things that I learned in week 48</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-48/</link>
+      <pubDate>Sun, 02 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-48/</guid>
+      <description>AWS When you&amp;rsquo;re in doubt about a policy the policy simulator https://policysim.aws.amazon.com should always your first tool of choice.
+Typescript When unwrapping an object in Typescript the following way, you should be sure that all properties match. If they don’t, they’re just undefinded
+const { accessKey, accessKeySecret, region, bucket, endpoint } = this.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Npm on Portfolio</title>
+    <link>https://mavogel.github.io/tags/npm/</link>
+    <description>Recent content in Npm on Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Nov 2018 22:44:15 +0100</lastBuildDate>
+    
+	<atom:link href="https://mavogel.github.io/tags/npm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things that I learned in week 44</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-44/</link>
+      <pubDate>Sun, 04 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-44/</guid>
+      <description>npm libraries The following libraries should be used with pinned versions - restify@6.3.2 - and inversify-restify-utils@3.3.1
+Not even with a micro change restify@6.3.4. It is incompatible with the inversify utils. You get a Constructor already exists error.
+Semantic versioning is not always reliable! I found a repository pointing out this error as well.</description>
+    </item>
+    
+  </channel>
+</rss>

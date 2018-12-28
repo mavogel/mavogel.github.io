@@ -21,6 +21,38 @@
     </item>
     
     <item>
+      <title>Things that I learned in week 50</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-50/</link>
+      <pubDate>Sun, 16 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-50/</guid>
+      <description>Postgres While creating a projection for a specific use-case, we faced the problem that there was no more room for optimization with indexes on the database. So we had to step back and re-think the whole data model which consisted of 4 tables each having more than 50 million rows. Until this point, we hat cheap inserts and expensive gets on the data model.
+After the analysis of the data, we figured out that the approach we took, in the beginning, was a bit too naive.</description>
+    </item>
+    
+    <item>
+      <title>Things that I learned in week 49</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-49/</link>
+      <pubDate>Sun, 09 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-49/</guid>
+      <description>AWS Redshift This week was much focus on AWS Redshift:
+Testing Unfortunately, it is currently not possible to mock a Redshift for testing. As we use white-box testing with Docker containers, I was looking for a container supporting DISTSTYLE, KEYSTYLE, as well as LOAD and UNLOAD. After researching there is no suitable container out there: neither docker-amazon-redshift, nor docker-pgredshift was appropriate. We thought
+ adapting the SQL statement so that we could work with a Postgres container or about mocking TCP connections and faking the calls to Redshift  but could not find a solution, because we also did not want to adapt production code for testing.</description>
+    </item>
+    
+    <item>
+      <title>Things that I learned in week 48</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-48/</link>
+      <pubDate>Sun, 02 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-48/</guid>
+      <description>AWS When you&amp;rsquo;re in doubt about a policy the policy simulator https://policysim.aws.amazon.com should always your first tool of choice.
+Typescript When unwrapping an object in Typescript the following way, you should be sure that all properties match. If they don’t, they’re just undefinded
+const { accessKey, accessKeySecret, region, bucket, endpoint } = this.</description>
+    </item>
+    
+    <item>
       <title>About me</title>
       <link>https://mavogel.github.io/about/</link>
       <pubDate>Sat, 01 Dec 2018 13:29:12 +0100</pubDate>
@@ -29,6 +61,39 @@
       <description>Hello, my name is Manuel Vogel. I&amp;rsquo;m striving to grow every day as a person and developer and I like doing good things and talk/write about them. (Kudos for the inspiration go to my buddy r3dsm0k3)
 Currently, I&amp;rsquo;m working at Stocard as a DevOps Engineer, doing awesome stuff with terraform, Docker, TypeScript and bash. In my free time, usually in the dark night hours, I maintain the terraform-provider-docker.
 I love automating things because I believe we&amp;rsquo;re all smart people and</description>
+    </item>
+    
+    <item>
+      <title>Things that I learned in week 46</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-46/</link>
+      <pubDate>Sun, 18 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-46/</guid>
+      <description>Building nodejs in Docker If you need to add keys to the keychain in a Travis build and you have problems with IPV6 (which Travis cannot handle), use the IPV4 keyservers as follows:
+RUN set -ex \  &amp;amp;&amp;amp; for key in \  94AE36675C464D64BAFA68DD7434390BDBE9B9C5 \  #…. more keys... ; do \  gpg --keyserver hkp://ha.pool.sks-keyservers.net --recv-keys &amp;#34;$key&amp;#34; || \  gpg --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys &amp;#34;$key&amp;#34; || \  gpg --keyserver hkp://ipv4.</description>
+    </item>
+    
+    <item>
+      <title>Things that I learned in week 45</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-45/</link>
+      <pubDate>Sun, 11 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-45/</guid>
+      <description>Mocking with mock-server When you want to expose another port than 80 from the mock-server you need to change the serverPort. The Docker port mapping does not work in this case, which is strange
+This works:
+service-mock: image: jamesdbloom/mockserver:5.3.0 ports: - &amp;#34;82&amp;#34; entrypoint: /opt/mockserver/run_mockserver.sh -logLevel TRACE -serverPort 82 networks: test_net: aliases: - service-mock This does not work:
+service-mock: image: jamesdbloom/mockserver:5.3.0 ports: - &amp;#34;82:80&amp;#34; entrypoint: /opt/mockserver/run_mockserver.sh -logLevel TRACE -serverPort 80 networks: test_net: aliases: - service-mock Furthermore, when mocking request and it is unclear why a request does not match an expectation merely turn on TRACE logging for the mockserver.</description>
+    </item>
+    
+    <item>
+      <title>Things that I learned in week 44</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-44/</link>
+      <pubDate>Sun, 04 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-44/</guid>
+      <description>npm libraries The following libraries should be used with pinned versions - restify@6.3.2 - and inversify-restify-utils@3.3.1
+Not even with a micro change restify@6.3.4. It is incompatible with the inversify utils. You get a Constructor already exists error.
+Semantic versioning is not always reliable! I found a repository pointing out this error as well.</description>
     </item>
     
     <item>
