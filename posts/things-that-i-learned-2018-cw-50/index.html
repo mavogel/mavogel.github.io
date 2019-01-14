@@ -130,7 +130,7 @@ the service and database could handle this amount of requests to cope with the l
 <p>On the other hand, we wanted the projection to be lightning fast. On a projection, there should usually be no <code>joins</code> if it is meant to be fast. So we took an intermediate
 step to update the projections (there were 2 in total) on each <code>insert</code> or <code>update</code>
 of the <em>intermediate</em> tables. Furthermore, we computed the eligibility of a data record for the projection. Additionally, we partitioned the projection tables. Fortunately
-Postgres 10 does much work on <a href="https://www.postgresql.org/docs/10/ddl-partitioning.html">paritioning</a>
+Postgres 10 does much work on <a href="https://www.postgresql.org/docs/10/ddl-partitioning.html">partioning</a>
 already for you. You still have to create the partitions on your own but a <code>CREATE TABLE IF EXISTS</code> does the magic before each insert. In <a href="https://www.postgresql.org/docs/9.6/ddl-partitioning.html">Postgres 9</a> you still had to write triggers.
 You still can in Postgres 10 as well if you want full flexibility. On AWS RDS the latest
 Postgres version available is currently 10, meaning if you cannot to the lovely <code>INSERT ... ON CONFLICT DO UPDATE</code>, but you have to implement it on your own. With our experience

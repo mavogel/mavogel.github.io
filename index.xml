@@ -6,10 +6,21 @@
     <description>Recent content on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 23 Dec 2018 22:44:15 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 05 Jan 2019 17:01:16 +0100</lastBuildDate>
     
 	<atom:link href="https://mavogel.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Things that I learned in week 01</title>
+      <link>https://mavogel.github.io/posts/things-that-i-learned-2019-cw-01/</link>
+      <pubDate>Sat, 05 Jan 2019 17:01:16 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/posts/things-that-i-learned-2019-cw-01/</guid>
+      <description>Postgres Problem with lots of partitions Gaining lots of knowledge on Postgres 10 especially about partioning, we observed a strange behavior on UPDATE and DELETE lately while the number of partitions was growing a lot &amp;gt; 1500.
+To recap this is the table structure
+CREATE TABLE IF NOT EXISTS projection_table ( id varchar(200) NOT NULL, provider_id varchar(60) NOT NULL, input varchar(4096) NOT NULL, label varchar(100), modified_at timestamp NOT NULL ) PARTITION BY LIST (provider_id); Each partition has 2 more indexes which speed up the queries when the right partition was already determined:</description>
+    </item>
     
     <item>
       <title>Things that I learned and taught in week 51</title>
