@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Things That I Learned on Portfolio</title>
+    <title>things-that-i-learned on Portfolio</title>
     <link>https://mavogel.github.io/categories/things-that-i-learned/</link>
-    <description>Recent content in Things That I Learned on Portfolio</description>
+    <description>Recent content in things-that-i-learned on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 05 Jan 2019 17:01:16 +0100</lastBuildDate>

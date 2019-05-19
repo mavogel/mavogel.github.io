@@ -70,7 +70,7 @@ const { accessKey, accessKeySecret, region, bucket, endpoint } = this.</descript
       
       <guid>https://mavogel.github.io/about/</guid>
       <description>Hello, my name is Manuel Vogel. I&amp;rsquo;m striving to grow every day as a person and developer and I like doing good things and talk/write about them. (Kudos for the inspiration go to my buddy r3dsm0k3)
-Currently, I&amp;rsquo;m working at Stocard as a DevOps Engineer, doing awesome stuff with terraform, Docker, TypeScript and bash. In my free time, usually in the dark night hours, I maintain the terraform-provider-docker.
+Currently, I&amp;rsquo;m working at Eldiso as a Solutions Engineer, doing awesome stuff with Golang, terraform, Docker, TypeScript and bash. In my free time, usually in the dark night hours, I maintain the terraform-provider-docker.
 I love automating things because I believe we&amp;rsquo;re all smart people and</description>
     </item>
     

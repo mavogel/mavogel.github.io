@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Typescript on Portfolio</title>
+    <title>typescript on Portfolio</title>
     <link>https://mavogel.github.io/tags/typescript/</link>
-    <description>Recent content in Typescript on Portfolio</description>
+    <description>Recent content in typescript on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 02 Dec 2018 22:44:15 +0100</lastBuildDate>

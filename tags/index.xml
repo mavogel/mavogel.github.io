@@ -6,85 +6,13 @@
     <description>Recent content in Tags on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Dec 2018 22:44:15 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 05 Jan 2019 17:01:16 +0100</lastBuildDate>
     
 	<atom:link href="https://mavogel.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Aws</title>
-      <link>https://mavogel.github.io/tags/aws/</link>
-      <pubDate>Sun, 16 Dec 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/tags/aws/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://mavogel.github.io/tags/docker/</link>
-      <pubDate>Sun, 18 Nov 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Domain Driven Design</title>
-      <link>https://mavogel.github.io/tags/domain-driven-design/</link>
-      <pubDate>Sun, 16 Dec 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/tags/domain-driven-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git Repos</title>
-      <link>https://mavogel.github.io/tags/git-repos/</link>
-      <pubDate>Sun, 23 Dec 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/tags/git-repos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Inversify</title>
-      <link>https://mavogel.github.io/tags/inversify/</link>
-      <pubDate>Sun, 04 Nov 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/tags/inversify/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mockserver</title>
-      <link>https://mavogel.github.io/tags/mockserver/</link>
-      <pubDate>Sun, 11 Nov 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/tags/mockserver/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nodejs</title>
-      <link>https://mavogel.github.io/tags/nodejs/</link>
-      <pubDate>Sun, 18 Nov 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Npm</title>
-      <link>https://mavogel.github.io/tags/npm/</link>
-      <pubDate>Sun, 04 Nov 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/tags/npm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Postgres</title>
+      <title>postgres</title>
       <link>https://mavogel.github.io/tags/postgres/</link>
       <pubDate>Sat, 05 Jan 2019 17:01:16 +0100</pubDate>
       
@@ -93,25 +21,16 @@
     </item>
     
     <item>
-      <title>Redshift</title>
-      <link>https://mavogel.github.io/tags/redshift/</link>
-      <pubDate>Sun, 09 Dec 2018 22:44:15 +0100</pubDate>
+      <title>git-repos</title>
+      <link>https://mavogel.github.io/tags/git-repos/</link>
+      <pubDate>Sun, 23 Dec 2018 22:44:15 +0100</pubDate>
       
-      <guid>https://mavogel.github.io/tags/redshift/</guid>
+      <guid>https://mavogel.github.io/tags/git-repos/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Restify</title>
-      <link>https://mavogel.github.io/tags/restify/</link>
-      <pubDate>Sun, 04 Nov 2018 22:44:15 +0100</pubDate>
-      
-      <guid>https://mavogel.github.io/tags/restify/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Testing</title>
+      <title>testing</title>
       <link>https://mavogel.github.io/tags/testing/</link>
       <pubDate>Sun, 23 Dec 2018 22:44:15 +0100</pubDate>
       
@@ -120,7 +39,61 @@
     </item>
     
     <item>
-      <title>Travis</title>
+      <title>aws</title>
+      <link>https://mavogel.github.io/tags/aws/</link>
+      <pubDate>Sun, 16 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/tags/aws/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>domain-driven-design</title>
+      <link>https://mavogel.github.io/tags/domain-driven-design/</link>
+      <pubDate>Sun, 16 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/tags/domain-driven-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>redshift</title>
+      <link>https://mavogel.github.io/tags/redshift/</link>
+      <pubDate>Sun, 09 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/tags/redshift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>typescript</title>
+      <link>https://mavogel.github.io/tags/typescript/</link>
+      <pubDate>Sun, 02 Dec 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/tags/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://mavogel.github.io/tags/docker/</link>
+      <pubDate>Sun, 18 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://mavogel.github.io/tags/nodejs/</link>
+      <pubDate>Sun, 18 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>travis</title>
       <link>https://mavogel.github.io/tags/travis/</link>
       <pubDate>Sun, 18 Nov 2018 22:44:15 +0100</pubDate>
       
@@ -129,11 +102,38 @@
     </item>
     
     <item>
-      <title>Typescript</title>
-      <link>https://mavogel.github.io/tags/typescript/</link>
-      <pubDate>Sun, 02 Dec 2018 22:44:15 +0100</pubDate>
+      <title>mockserver</title>
+      <link>https://mavogel.github.io/tags/mockserver/</link>
+      <pubDate>Sun, 11 Nov 2018 22:44:15 +0100</pubDate>
       
-      <guid>https://mavogel.github.io/tags/typescript/</guid>
+      <guid>https://mavogel.github.io/tags/mockserver/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inversify</title>
+      <link>https://mavogel.github.io/tags/inversify/</link>
+      <pubDate>Sun, 04 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/tags/inversify/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>npm</title>
+      <link>https://mavogel.github.io/tags/npm/</link>
+      <pubDate>Sun, 04 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/tags/npm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>restify</title>
+      <link>https://mavogel.github.io/tags/restify/</link>
+      <pubDate>Sun, 04 Nov 2018 22:44:15 +0100</pubDate>
+      
+      <guid>https://mavogel.github.io/tags/restify/</guid>
       <description></description>
     </item>
     

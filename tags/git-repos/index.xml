@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Git Repos on Portfolio</title>
+    <title>git-repos on Portfolio</title>
     <link>https://mavogel.github.io/tags/git-repos/</link>
-    <description>Recent content in Git Repos on Portfolio</description>
+    <description>Recent content in git-repos on Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 23 Dec 2018 22:44:15 +0100</lastBuildDate>

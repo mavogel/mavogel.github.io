@@ -3,8 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mavogel.github.io/categories/</loc>
+    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/</loc>
+    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/posts/</loc>
+    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/</loc>
+    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mavogel.github.io/posts/things-that-i-learned-2019-cw-01/</loc>
     <lastmod>2019-01-05T17:01:16+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/postgres/</loc>
+    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/categories/things-that-i-learned/</loc>
+    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,8 +49,32 @@
   </url>
   
   <url>
+    <loc>https://mavogel.github.io/tags/git-repos/</loc>
+    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/testing/</loc>
+    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-50/</loc>
     <lastmod>2018-12-16T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/aws/</loc>
+    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/domain-driven-design/</loc>
+    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -23,8 +83,20 @@
   </url>
   
   <url>
+    <loc>https://mavogel.github.io/tags/redshift/</loc>
+    <lastmod>2018-12-09T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-48/</loc>
     <lastmod>2018-12-02T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/typescript/</loc>
+    <lastmod>2018-12-02T22:44:15+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -38,68 +110,8 @@
   </url>
   
   <url>
-    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-45/</loc>
-    <lastmod>2018-11-11T22:44:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-44/</loc>
-    <lastmod>2018-11-04T22:44:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/projects/2017-11-07-ilias-client-lib/</loc>
-    <lastmod>2017-11-07T16:28:54+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/projects/2017-02-01-from-monolith-to-microservices/</loc>
-    <lastmod>2017-02-01T12:39:47+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/projects/2016-10-27-ilias-client/</loc>
-    <lastmod>2016-10-27T12:32:01+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/tags/aws/</loc>
-    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://mavogel.github.io/tags/docker/</loc>
     <lastmod>2018-11-18T22:44:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/tags/domain-driven-design/</loc>
-    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/tags/git-repos/</loc>
-    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/tags/inversify/</loc>
-    <lastmod>2018-11-04T22:44:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/tags/mockserver/</loc>
-    <lastmod>2018-11-11T22:44:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -110,38 +122,36 @@
   </url>
   
   <url>
-    <loc>https://mavogel.github.io/tags/npm/</loc>
+    <loc>https://mavogel.github.io/tags/travis/</loc>
+    <lastmod>2018-11-18T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-45/</loc>
+    <lastmod>2018-11-11T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/mockserver/</loc>
+    <lastmod>2018-11-11T22:44:15+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/posts/things-that-i-learned-2018-cw-44/</loc>
+    <lastmod>2018-11-04T22:44:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/tags/inversify/</loc>
     <lastmod>2018-11-04T22:44:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mavogel.github.io/</loc>
-    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/tags/postgres/</loc>
-    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/posts/</loc>
-    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/projects/</loc>
-    <lastmod>2017-11-07T16:28:54+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/tags/redshift/</loc>
-    <lastmod>2018-12-09T22:44:15+01:00</lastmod>
+    <loc>https://mavogel.github.io/tags/npm/</loc>
+    <lastmod>2018-11-04T22:44:15+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -152,33 +162,24 @@
   </url>
   
   <url>
-    <loc>https://mavogel.github.io/tags/</loc>
-    <lastmod>2018-12-16T22:44:15+01:00</lastmod>
+    <loc>https://mavogel.github.io/projects/2017-11-07-ilias-client-lib/</loc>
+    <lastmod>2017-11-07T16:28:54+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mavogel.github.io/projects/</loc>
+    <lastmod>2017-11-07T16:28:54+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://mavogel.github.io/tags/testing/</loc>
-    <lastmod>2018-12-23T22:44:15+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://mavogel.github.io/projects/2017-02-01-from-monolith-to-microservices/</loc>
+    <lastmod>2017-02-01T12:39:47+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://mavogel.github.io/categories/things-that-i-learned/</loc>
-    <lastmod>2019-01-05T17:01:16+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/tags/travis/</loc>
-    <lastmod>2018-11-18T22:44:15+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mavogel.github.io/tags/typescript/</loc>
-    <lastmod>2018-12-02T22:44:15+01:00</lastmod>
-    <priority>0</priority>
+    <loc>https://mavogel.github.io/projects/2016-10-27-ilias-client/</loc>
+    <lastmod>2016-10-27T12:32:01+01:00</lastmod>
   </url>
   
 </urlset>
